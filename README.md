@@ -1,5 +1,10 @@
-bandwidthd-pSQL-frontend
-========================
+# bandwidthd-pSQL-frontend-docker
+
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
+This repo will bring up a web server that connects to a postgresql database (either created here via the `docker-compose.yml` file or to an existing one) that bandwidthd is sending logs to.  The intention is this website is only accessed internally and so things like ssl are not included.
+
+# bandwidthd-pSQL-frontend
 
 PHP frontend to display bandwidthd data that was stored in a postgreSQL database
 
@@ -12,8 +17,7 @@ but I'm very happy to merge it back if someone has access to the sourceforge pro
 
 See [CHANGELOG](https://github.com/individual-it/bandwidthd-pSQL-frontend/blob/master/CHANGELOG.md#changelog) for full details about the changes.
 
-DATABASE SUPPORT of bandwidthd
-------------------------------
+## DATABASE SUPPORT of bandwidthd
 
 Since version 2.0, Bandwidthd now has support for external databases.  This system 
 consists of 3 major parts:
